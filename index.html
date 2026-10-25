@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prisma Cursos - Início</title>
+  <meta name="description"
+    content="Transforme conhecimento em novas oportunidades com a Prisma Cursos. Cursos atualizados com foco no mercado de trabalho.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- cabeçalho inicio -->
+  <header class="site-header d-none d-md-block">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="header-inner d-flex align-items-center justify-content-between">
+
+        <a href="index.html" class="navbar-brand d-flex align-items-center me-3" id="header-logo">
+          <img src="assets/logo_prisma.png" alt="Logo Prisma Cursos" class="img-fluid logo-img">
+        </a>
+
+        <nav class="d-flex align-items-center gap-4 gap-lg-5" id="desktop-nav">
+          <a href="index.html" class="nav-item-link current-page">Início</a>
+          <a href="quem-somos.html" class="nav-item-link">Quem somos</a>
+          <a href="cursos.html" class="nav-item-link">Cursos</a>
+          <a href="contatos.html" class="nav-item-link">Contatos</a>
+        </nav>
+
+        <div class="d-flex align-items-center">
+          <div class="gift-wrapper">
+            <a href="quiz.html" class="gift-link" id="gift-link" title="Quiz Prisma Cursos" aria-label="Ir para o Quiz">
+              <img src="assets/gift_icon.png" alt="Presente Prisma Cursos" class="gift-icon" id="gift-btn">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- cabeçalho final -->
+
+  <!-- cabeçalho inicio mobile -->
+  <header class="mobile-header d-md-none">
+    <div class="mobile-header-inner d-flex align-items-center justify-content-between px-3">
+      <button class="mobile-hamburger-btn border-0 bg-transparent p-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mobileMenuDrawer" aria-controls="mobileMenuDrawer" aria-expanded="false"
+        aria-label="Toggle navigation" id="mobile-hamburger">
+        <img src="assets/menu_icon.png" alt="Menu" class="mobile-menu-img">
+      </button>
+
+      <a href="index.html" class="mobile-header-logo">
+        <img src="assets/logo_prisma.png" alt="Prisma Cursos" class="mobile-logo-img">
+      </a>
+    </div>
+
+    <div class="collapse mobile-menu-collapse" id="mobileMenuDrawer">
+      <div class="d-flex flex-column gap-3 p-3">
+        <a href="index.html" class="nav-item-link current-page">Início</a>
+        <a href="quem-somos.html" class="nav-item-link">Quem somos</a>
+        <a href="cursos.html" class="nav-item-link">Cursos</a>
+        <a href="contatos.html" class="nav-item-link">Contatos</a>
+        <a href="quiz.html" class="nav-item-link text-cyan">Quiz</a>
+      </div>
+    </div>
+  </header>
+  <!-- cabeçalho final mobile -->
+
+  <main>
+    <section class="hero-section py-4 py-lg-5">
+      <div class="container-fluid px-3 px-md-4 px-lg-5">
+        <div class="row align-items-center g-4">
+
+          <div class="col-12 col-lg-7 pe-lg-4 text-center text-lg-start">
+            <h1 class="hero-title fw-bold mb-3 mb-lg-5">
+              <span class="d-block text-black">Transforme conhecimento em</span>
+              <span class="d-block text-cyan">novas oportunidades</span>
+            </h1>
+
+            <div class="d-block d-lg-none my-3 my-md-4 text-center">
+              <a href="quiz.html" class="mobile-gift-link" title="Fazer Quiz">
+                <img src="assets/presente_minimalista_azul.png" alt="Presente Prisma Cursos"
+                  class="mobile-hero-gift-img">
+              </a>
+            </div>
+
+            <div class="hero-buttons-wrapper d-flex justify-content-center justify-content-lg-start gap-2 gap-md-4">
+              <a href="cursos.html" class="btn btn-figma btn-conheca text-center" id="btn-conheca-cursos">
+                Conheça os cursos
+              </a>
+              <a href="contatos.html" class="btn btn-figma btn-contato text-center" id="btn-entre-contato">
+                Entre em contato
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-5 p-0 d-none d-lg-flex justify-content-lg-end">
+            <div class="hero-image-box w-100">
+              <img src="assets/hero_students.png" alt="Estudantes Prisma Cursos"
+                class="img-fluid w-100 shadow-sm hero-img">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-banner py-3 py-md-4">
+      <div class="container-fluid px-3 px-md-4 px-lg-5">
+        <div class="row align-items-center g-3 g-md-4">
+
+          <div class="col-6 col-lg-3">
+            <div class="d-flex align-items-center gap-2 gap-md-3">
+              <div class="stat-icon-wrapper flex-shrink-0">
+                <img src="assets/stat_courses.png" alt="Cursos" class="img-fluid stat-icon">
+              </div>
+              <div class="stat-info">
+                <div class="stat-number fw-bold">+20</div>
+                <div class="stat-label">Cursos disponíveis</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="d-flex align-items-center gap-2 gap-md-3">
+              <div class="stat-icon-wrapper flex-shrink-0">
+                <img src="assets/stat_students.png" alt="Alunos" class="img-fluid stat-icon">
+              </div>
+              <div class="stat-info">
+                <div class="stat-number fw-bold">+900</div>
+                <div class="stat-label">Alunos capacitados</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="d-flex align-items-center gap-2 gap-md-3">
+              <div class="stat-icon-wrapper flex-shrink-0">
+                <img src="assets/stat_content.png" alt="Conteúdo" class="img-fluid stat-icon">
+              </div>
+              <div class="stat-info">
+                <div class="stat-number fw-bold">Conteúdo</div>
+                <div class="stat-label">Sempre atualizado</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="d-flex align-items-center gap-2 gap-md-3">
+              <div class="stat-icon-wrapper flex-shrink-0">
+                <img src="assets/stat_market.png" alt="Mercado" class="img-fluid stat-icon">
+              </div>
+              <div class="stat-info">
+                <div class="stat-number fw-bold">Foco</div>
+                <div class="stat-label">No mercado de trabalho</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section py-4 py-lg-5">
+      <div class="container-fluid px-3 px-md-4 px-lg-5">
+
+        <div class="row align-items-center g-4 d-none d-lg-flex">
+          <div class="col-12 col-lg-5 p-0 d-flex justify-content-lg-start">
+            <div class="testimonial-image-box w-100">
+              <img src="assets/testimonial_person.png" alt="Aluno Prisma Cursos"
+                class="img-fluid w-100 shadow-sm testimonial-img">
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-7 ps-lg-5">
+            <h2 class="testimonial-title fw-bold mb-4">
+              <span class="d-block text-black">Confira a trajetória de quem</span>
+              <span class="d-block text-cyan">já conquistou o mercado</span>
+            </h2>
+
+            <div class="d-flex">
+              <a href="depoimentos.html" class="btn btn-figma btn-depoimento text-center" id="btn-depoimento">
+                Depoimentos
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex d-lg-none align-items-center justify-content-between gap-2 py-2">
+          <div class="mobile-testimonial-text">
+            <span class="fw-bold text-black">Confira a trajetória de quem </span>
+            <span class="fw-bold text-cyan d-block">já conquistou o mercado!</span>
+          </div>
+          <div>
+            <a href="depoimentos.html" class="btn btn-figma btn-veja-mais text-center" id="btn-veja-mais">
+              Veja mais
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- rodapé inicio -->
+  <footer class="site-footer py-3 d-none d-md-block">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row align-items-center g-4">
+
+        <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-start">
+          <a href="index.html" class="footer-brand" id="footer-logo">
+            <img src="assets/logo_prisma.png" alt="Prisma Cursos" class="img-fluid footer-logo-img">
+          </a>
+        </div>
+
+        <div
+          class="col-12 col-md-4 col-lg-5 d-flex flex-column align-items-center justify-content-center text-center text-white footer-contact-info">
+          <div class="contact-line">📞 (61) 4002-8922</div>
+          <div class="contact-line">✉️ contato@prisma.com</div>
+          <div class="contact-line">📍 Av. Principal, 100</div>
+        </div>
+
+        <div
+          class="col-12 col-md-4 col-lg-4 d-flex justify-content-center justify-content-md-end align-items-center gap-3 footer-social-links">
+          <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp"
+            aria-label="WhatsApp">
+            <img src="assets/icon_whatsapp.png" alt="WhatsApp" class="social-icon">
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link"
+            title="Instagram" aria-label="Instagram">
+            <img src="assets/icon_instagram.png" alt="Instagram" class="social-icon">
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn"
+            aria-label="LinkedIn">
+            <img src="assets/icon_linkedin.png" alt="LinkedIn" class="social-icon">
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" title="YouTube"
+            aria-label="YouTube">
+            <img src="assets/icon_youtube.png" alt="YouTube" class="social-icon social-icon-yt">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- rodapé final -->
+
+  <!-- rodapé inicio mobile -->
+  <footer class="mobile-footer py-2 d-md-none">
+    <div class="container-fluid px-3">
+      <div class="d-flex align-items-center justify-content-between">
+
+        <a href="index.html" class="mobile-footer-logo-link">
+          <img src="assets/logo_prisma_icon.png" alt="Prisma Cursos" class="mobile-footer-logo-img">
+        </a>
+
+        <div class="d-flex align-items-center gap-2 footer-social-links">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link"
+            title="Instagram" aria-label="Instagram">
+            <img src="assets/icon_instagram.png" alt="Instagram" class="mobile-social-icon">
+          </a>
+          <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp"
+            aria-label="WhatsApp">
+            <img src="assets/icon_whatsapp.png" alt="WhatsApp" class="mobile-social-icon">
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn"
+            aria-label="LinkedIn">
+            <img src="assets/icon_linkedin.png" alt="LinkedIn" class="mobile-social-icon">
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" title="YouTube"
+            aria-label="YouTube">
+            <img src="assets/icon_youtube.png" alt="YouTube" class="mobile-social-icon mobile-social-icon-yt">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- rodapé final mobile -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
