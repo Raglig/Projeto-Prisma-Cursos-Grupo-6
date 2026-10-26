@@ -1,8 +1,3 @@
-/* ==========================================================================
-   PRISMA CURSOS - Folha de Estilos (Início)
-   Alinhada com design Figma Desktop e Mobile (Bootstrap 5)
-   ========================================================================== */
-
 :root {
   --font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --color-white: #FFFFFF;
@@ -14,7 +9,6 @@
   --color-header-end: #2774E0;
   --color-stats-start: #2774E0;
   --color-stats-end: #153F7A;
-  --color-footer-bg: #0B1E40;
 }
 
 body {
@@ -26,9 +20,6 @@ body {
   padding: 0;
 }
 
-/* ==========================================================================
-   CABEÇALHO DESKTOP (Componente Figma 1:1402)
-   ========================================================================== */
 .site-header {
   background: linear-gradient(90deg, #0B1638 4%, #19458C 49%, #2774E0 94%);
   width: 100%;
@@ -90,10 +81,6 @@ body {
   opacity: 0.85;
 }
 
-/* ==========================================================================
-   CABEÇALHO MOBILE (Componente Figma 1:1429)
-   Degradê: linear-gradient(90deg, #0B1638 4%, #122E62 27%, #2774E0 94%)
-   ========================================================================== */
 .mobile-header {
   background: linear-gradient(90deg, #0B1638 4%, #122E62 27%, #2774E0 94%);
   width: 100%;
@@ -134,9 +121,6 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* ==========================================================================
-   BOTÕES FIGMA (#33D6F6 com texto branco sublinhado)
-   ========================================================================== */
 .btn-figma {
   background-color: var(--color-cyan-ultra);
   color: var(--color-white);
@@ -163,7 +147,6 @@ body {
   filter: brightness(0.95);
 }
 
-/* Botão menor 'Veja mais' no mobile */
 .btn-veja-mais {
   min-width: 110px;
   height: 46px;
@@ -172,11 +155,12 @@ body {
   white-space: nowrap;
 }
 
-/* ==========================================================================
-   HERO SECTION
-   ========================================================================== */
 .hero-section {
   width: 100%;
+}
+
+.hero-container {
+  padding-right: 0 !important;
 }
 
 .hero-title {
@@ -206,17 +190,20 @@ body {
 }
 
 .hero-image-box {
-  max-width: 600px;
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
 .hero-img {
-  border-radius: 12px;
+  border-radius: 12px 0 0 12px;
   object-fit: cover;
+  display: block;
+  margin-left: auto;
+  height: 100%;
+  width: 100%;
 }
 
-/* ==========================================================================
-   BANNER DE ESTATÍSTICAS
-   ========================================================================== */
 .stats-banner {
   background: linear-gradient(90deg, #2774E0 26%, #153F7A 52%);
   color: var(--color-white);
@@ -244,9 +231,6 @@ body {
   font-weight: 500;
 }
 
-/* ==========================================================================
-   SEÇÃO DE DEPOIMENTO
-   ========================================================================== */
 .testimonial-section {
   width: 100%;
 }
@@ -272,12 +256,10 @@ body {
   line-height: 1.35;
 }
 
-/* ==========================================================================
-   RODAPÉ DESKTOP (Componente Figma 1:807)
-   ========================================================================== */
 .site-footer {
-  background-color: var(--color-footer-bg);
+  background: linear-gradient(90deg, #0B1638 4%, #19458C 49%, #2774E0 94%);
   color: var(--color-white);
+  width: 100%;
 }
 
 .footer-logo-img {
@@ -325,10 +307,6 @@ body {
   height: 45px;
 }
 
-/* ==========================================================================
-   RODAPÉ MOBILE (Componente Figma 1:1435)
-   linear-gradient(90deg, #0B1638 4%, #122E62 26%, #2774E0 94%)
-   ========================================================================== */
 .mobile-footer {
   background: linear-gradient(90deg, #0B1638 4%, #122E62 26%, #2774E0 94%);
   width: 100%;
@@ -350,10 +328,8 @@ body {
   height: 26px;
 }
 
-/* ==========================================================================
-   AJUSTES RESPONSIVOS
-   ========================================================================== */
 @media (max-width: 991.98px) {
+
   .hero-title,
   .testimonial-title {
     font-size: 2.3rem;
